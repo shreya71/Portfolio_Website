@@ -91,6 +91,7 @@ section{
     width: 25vw;
     animation: floatImage 4s ease-in-out infinite;
         border-radius: 8rem;
+        margin: 0 5rem 0;
 }
 
 @keyframes floatImage {
