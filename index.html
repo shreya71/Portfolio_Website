@@ -17,6 +17,7 @@
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
+            <a href="#ab">About</a>
             <a href="#about">Work Experience</a>
             <a href="#skills">Skills</a>
             <a href="#portfolio">Projects</a>
@@ -26,24 +27,40 @@
 
     <section class="home" id="home">
         <div class="home-content">
-        <h3>Hi there!</h3>
+        <h1>Hey!</h1>
         <h1>Nice to see you here &#128512</h1>
-        <h3>I'm a <span>final year B.Tech student at VNIT, Nagpur</span></h3>
-        <p>I am learning web development and have good knowledge of C++. Throughout my academic journey I have maintained a good
-            academic record and actively engaged in various projects and extracurricular activities.
-            I strive for continuous growth and advancement in the IT indusrty. I am excited about the possibilities and
-            opportunities that lie ahead. I look forward to connecting with like-minded individuals and contributing my skills
-            to make a positive impact.
-        </p>
+        <h3>I'm a <span class="multiple-text"></span></h3>
         <div class="social-media">
             <a href="https://www.linkedin.com/in/shreya-singh-395127218/"><i class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/shreya71"><i class='bx bxl-github'></i></a>
+            <!-- <a href=""><i class='bx bxl-github'></i></a> -->
         </div>
-        <a href="Shreya_Singh_Resume.pdf" class="btn">Download CV</a>
+        <a href="Shreya_main.pdf" class="btn">Download CV</a>
         </div>
 
         <div class="home-img">
-            <img src="i1.jpg" height = "auto" alt="">
+            <img src="i1.21.jpg" height = "auto" alt="">
+        </div>
+    </section>
+
+    <section class="ab" id="ab">
+        <div class="about-img">
+            <img src="" alt="">
+        </div>
+        <div class="ab-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <!-- <h3>Project Intern at Fractal Analytics <p><span>May 10, 2023-July 10, 2023</span></p>
+            </h3> -->
+            <p>I am Shreya Singh, currently employed as a GET at Addverb Technologies in Greater Noida, Uttar Pradesh, through college
+            placements.<br><br>
+            I completed my B.Tech in Electrical and Electronics Engineering from VNIT, Nagpur, with a GPA of 8.22 out of
+            10. Throughout my academic journey, I maintained a strong academic record and actively engaged in various projects and
+            extracurricular activities.<br><br>
+            I am passionate about learning and exploring new areas, particularly in web development, and
+            I strive for continuous growth.<br><br>
+            I look forward to connecting with like-minded individuals and contributing my skills to
+            make a positive impact.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
         </div>
     </section>
 
@@ -53,7 +70,7 @@
         </div>
         <div class="about-content" >
             <h2 class="heading">Internship <span>Experience</span></h2>
-            <h3>Project Intern at Fractal Analytics Pvt. Ltd. <p><span>May 10, 2023-July 10, 2023</span></p></h3>
+            <h3>Project Intern at Fractal Analytics <p><span>May 10, 2023-July 10, 2023</span></p></h3>
             <p>
                 <ul>
                 <li>Worked as a project intern under Google Cloud Platform(GCP) team in partnership and alliance department.
@@ -66,7 +83,7 @@
             <li>Collaborated closely with the team, providing support, obtaining feedback, & ensuring timely task completion.</li>
             </ul>
             </p>
-            <!-- <a href="#" class="btn">Certificate</a> -->
+            <a href="Certificate.pdf" class="btn">Certificate</a>
         </div>
     </section>
 
@@ -75,20 +92,24 @@
         <div class="skill-container">
             <div class="portfolio-box">
                 <span><i class='bx bx-code-block'></i></span>
-                <h3 class="head">Front End</h3>
+                <h3 class="head">Languages and Databases</h3>
                     <ul style="list-style-type: none;">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
-                        <li>React.js</li>
+                        <li>C++</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
                     </ul>
             </div>
             <div class="portfolio-box">
                 <span><i class='bx bx-code-alt' ></i></span>
-                <h3 class="head">Programming languages</h3>
+                <h3 class="head">Frameworks and Tools...</h3>
                 <ul style="list-style-type: none;">
-                    <li>C++</li>
-                    <li>MATLAB</li>
+                    <li>Git</li>
+                    <li>React.js</li>
+                    <li>Express</li>
+                    <li>VS Code</li>
                 </ul>
             </div>
         </div>
@@ -98,29 +119,62 @@
         <h2 class="heading">My <span>Projects</span></h2>
 
         <div class="portfolio-container">
+
             <div class="portfolio-box">
-                <img src="11.png"  height = "350" alt="">
+                <img src="7.jpg" height="350" alt="">
                 <div class="portfolio-layer">
-                    <h4>CodePen Text Editor</h4>
-                    <p>Developed a responsive application, a code editor for HTML, CSS and JavaScript. Provided an interface for writing and
-                    editing code allowing users to run their code within the application and view the real-time output in a preview-pane.
-                    Data is persisted and users can return back to work.</p>
-                    <a href="https://shreya71.github.io/CodePen/" ><i class='bx bx-link'></i></a>
+                    <h4>Store API</h4>
+                    <h3>JavaScript, MongoDB, Express, Node.Js</h3>
+                    <p>Backend for an e-commerce platform with a catalog of over 30 products. Designed a robust data model schema with distinct
+                    product criteria. Implemented advanced filtering, searching, storing, and dynamic database population for a seamless
+                    user experience.</p>
+                    <a href="https://github.com/shreya71/Store-API"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box">
-                <img src="21.jpg"  height = "350" alt="">
+                <img src="8.webp" height="350" alt="">
                 <div class="portfolio-layer">
-                    <h4>Shopping Website</h4>
-                    <p>This is a group project, a shopping website using JavaScript and Flask with features like custom login for sellers and buyers. Working as a frontend developer for the project. So far created a Login/Sign-up page for the website.</p>
-                    <a href="https://shreya71.github.io/Shopping_Website/"><i class='bx bx-link'></i></a>
+                    <h4>Task Manager</h4>
+                    <h3>HTML, CSS, MongoDB, JavaScript, React.js, Node.js</h3>
+                    <p>A task manager application enabling efficient task management functionalities with CRUD operations for adding,
+                    deleting, and updating tasks. Smooth backend API integration with the frontend ensures a cohesive and user-friendly
+                    experience.</p>
+                    <a href="https://github.com/shreya71/Task-Manager"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="11.png"  height = "350" alt="">
+                <div class="portfolio-layer">
+                    <h4>CodePen Text Editor</h4>
+                    <h3>HTML, CSS, JavaScript, React.Js</h3>
+                    <p>A responsive application, a code editor for HTML, CSS and JavaScript. It is an interface for writing and
+                    editing code allowing users to run their code within the application and view the real-time output in a preview-pane.
+                    Data is persisted and users can return back to work.</p>
+                    <div class="temp">
+                        <a href="https://github.com/shreya71/CodePen"><i class='bx bxl-github'></i></a>
+                        <a href="https://shreya71.github.io/CodePen/"><i class='bx bx-link'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="6.jpg"  height = "350" alt="">
+                <div class="portfolio-layer">
+                    <h4>Load Management</h4>
+                    <h3>C++</h3>
+                    <p>A microcontroller-based model for automatic load shedding that uses a relay mechanism. The battery's State of Charge (SOC) is
+                    sensed, and a signal is sent to an Arduino Uno, which operates the relay. The system ensures optimal battery usage and
+                    prevents over-discharge.</p>
+                    <a href="https://github.com/shreya71/Load-Management"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="3.jfif"  height = "350" alt="">
                 <div class="portfolio-layer">
                     <h4>Car reverse Sensor</h4>
+                    <h3>C++</h3>
                     <p>This is a microcontrollers based project. Made a working model of a car reverse sensor using bluetooth control. Designed the model of the car and developed the frontend of the mobile app.</p>
                     <a href="https://docs.google.com/presentation/d/1SWgu0A2o7IUztYlblVoW7COzX8pMtdUNsU2J3aOiJts/edit?usp=sharing"><i class='bx bx-link'></i></a>
                 </div>
@@ -129,9 +183,10 @@
                 <img src="4.jpg" height = "350" alt="">
                 <div class="portfolio-layer">
                     <h4>Basic 1024 bit calculator</h4>
+                    <h3>C++</h3>
                     <p>A code that calculates addition, subtraction and multiplication operations for big numbers. Results for substraction are
                     given with signs according the the inputs given. Implemented using sring manipulations. It also checks for overflow.</p>
-                    <a href="https://github.com/shreya71/1024_Bits_Calculator_-Basic-"><i class='bx bx-link'></i></a>
+                    <a href="https://github.com/shreya71/1024_Bits_Calculator_-Basic-"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
         </div>
@@ -165,6 +220,8 @@
 
 
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script src= "script.js"></script>
 </body>
