@@ -1,3 +1,29 @@
+
+const cursor = document.querySelector(".custom-cursor");
+
+  // Move cursor
+  if(cursor) {
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+  });
+
+  // Enlarge when touching text or interactive elements
+  const hoverTargets = document.querySelectorAll(
+    "p, span, h1, h2, h3, a, button, li"
+  );
+
+  hoverTargets.forEach(el => {
+    el.addEventListener("mouseenter", () => {
+      cursor.classList.add("active");
+    });
+
+    el.addEventListener("mouseleave", () => {
+      cursor.classList.remove("active");
+    });
+  });
+  }
+
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -46,10 +72,12 @@ window.onscroll = () => {
  ScrollReveal().reveal('.home-content h1,.ab-content, .about-img', { origin: 'left' });
  ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
- const typed = new Typed('.multiple-text', {
-    strings: ['Full-Stack Developer', 'Fast Learner', 'Gamer `&#128527`'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
- });
+
+const typed = new Typed('.multiple-text', {
+  strings: ["Developer", "Analyst", "Gamer 😏"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true
+  }
+);
