@@ -24,6 +24,8 @@
             <a href="#contact">Contact Me</a>
         </nav>
     </header>
+
+    <div class="custom-cursor"></div>
     
     <section class="home" id="home">
         <div class="home-content">
@@ -39,33 +41,17 @@
 
         <div class="home-img">
 
-            <a href="#developer-section" class="img-box img-1">
-                <img src="DEV.jpeg" alt="">
-                <span>Developer</span>
-            </a>
+           
 
-            <a href="#analyst-section" class="img-box img-2">
-                <img src="ANALYST.jpeg" alt="">
-                <span>Analyst</span>
-            </a>
+            
 
-            <a href="#gamer-section" class="img-box img-3">
-                <img src="GAMER.png" alt="">
-                <span>Gamer</span>
+            <!-- <a href="#gamer-section" class="img-box img-3"> -->
+                <img src="image.png" >
             </a>
 
         </div>
 
-        <!-- <div class="home-img">
-            <img src="DEV.jpeg" class="img img-1" alt="">
-            
-            <img src="ANALYST.jpeg" class="img img-2" alt="">
-            <img src="GAMER.png" class="img img-3" alt="">
-        </div> -->
-
-        <!-- <a id="explore-link" href="#" target="_blank">
-            <button class="btn">Explore</button>
-        </a> -->
+        
 
 
     </section>
@@ -76,10 +62,18 @@
         </div>
         <div class="ab-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <!-- <h3>Project Intern at Fractal Analytics <p><span>May 10, 2023-July 10, 2023</span></p>
-            </h3> -->
-            <p>I work at the intersection of code and data, building automation logic, developing efficient systems, and analyzing data to improve performance and decision-making. I enjoy turning complex problems into practical, measurable outcomes.</p>
+            
+            <p id="text">I’m a passionate developer who enjoys learning new technologies every day. Currently working as a programmer at Addverb
+            Technologies, I focus on building innovative solutions while actively exploring new ideas through research and
+            development.</p>
+
+            <div id="displayText"></div>
+            
             <a href="#contact" class="btn">Get in Touch</a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="#ab" class="btn-r">Don't Touch! 🫣</a>
+            
+           
         </div>
     </section>
 
@@ -94,8 +88,31 @@
             <!-- <a href="Certificate.pdf" class="btn">Certificate</a> -->
         </div>
     </section>
-
     <section class="skills" id="skills">
+    <div class="terminal-section">
+    
+        <div class="category">
+            <h3>Languages & Frameworks<button onclick="runTerminal('frontend')">Run ▶</button></h3>
+            <div id="frontend" class="terminal"></div>
+        </div>
+    
+        <div class="category">
+            <h3>Development & Databases<button onclick="runTerminal('backend')">Run ▶</button></h3>
+            <div id="backend" class="terminal"></div>
+        </div>
+    
+        <div class="category">
+            <h3>DevOps & Developer Tools <button onclick="runTerminal('tools')">Run ▶</button></h3>
+            <div id="tools" class="terminal"></div>
+        </div>
+    
+        <div class="category">
+            <h3>Computer Science Fundamentals<button onclick="runTerminal('other')">Run ▶</button></h3>
+            <div id="other" class="terminal"></div>
+        </div></div>
+    </section>
+
+    <!-- <section class="skills" id="skills">
         <h2 class="heading">My <span>Skills</span></h2>
         <div class="skill-container">
             <div class="portfolio-box">
@@ -125,44 +142,61 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="portfolio" id="portfolio">
         <h2 class="heading">My <span>Projects</span></h2>
 
         <div class="portfolio-container">
-
             <div class="portfolio-box">
-                <img src="7.jpg" height="350" alt="">
+                <img src="safe.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Data Privacy Vault</h4>
+                    <h3>JavaScript, Express</h3>
+                    <p>A Data Privacy Vault is a way to keep sensitive information safe. The vault stores the data and controls who can get to
+                    it, making sure it's managed, watched over, and used carefully.</p>
+                    <a href="https://github.com/shreya71/Data_Privacy_Vault"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="term.jpg"  alt="">
+                <div class="portfolio-layer">
+                    <h4>My Shell</h4>
+                    <h3>C++</h3>
+                    <p>Built my own Shell supporting command execution, optimized system level operations.</p>
+                    <a href=""><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="7.jpg"  alt="">
                 <div class="portfolio-layer">
                     <h4>Store API</h4>
                     <h3>JavaScript, MongoDB, Express, Node.Js</h3>
-                    <p>Backend for an e-commerce platform with a catalog of over 30 products. Designed a robust data model schema with distinct
-                    product criteria. Implemented advanced filtering, searching, storing, and dynamic database population for a seamless
+                    <p>Backend for an e-commerce platform with a catalog of over 30 products. Has options like advanced filtering, searching and
+                    storing for a
+                    seamless
                     user experience.</p>
                     <a href="https://github.com/shreya71/Store-API"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box">
-                <img src="8.webp" height="350" alt="">
+                <img src="8.webp"  alt="">
                 <div class="portfolio-layer">
                     <h4>Task Manager</h4>
                     <h3>HTML, CSS, MongoDB, JavaScript, React.js, Node.js</h3>
-                    <p>A task manager application enabling efficient task management functionalities with CRUD operations for adding,
-                    deleting, and updating tasks. Smooth backend API integration with the frontend ensures a cohesive and user-friendly
-                    experience.</p>
+                    <p>A task manager application enabling efficient task management functionalities for adding,
+                    deleting, and updating tasks. </p>
                     <a href="https://github.com/shreya71/Task-Manager"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box">
-                <img src="11.png"  height = "350" alt="">
+                <img src="11.png"  alt="">
                 <div class="portfolio-layer">
                     <h4>CodePen Text Editor</h4>
                     <h3>HTML, CSS, JavaScript, React.Js</h3>
-                    <p>A responsive application, a code editor for HTML, CSS and JavaScript. It is an interface for writing and
-                    editing code allowing users to run their code within the application and view the real-time output in a preview-pane.
+                    <p>A code editor for HTML, CSS and JavaScript.
                     Data is persisted and users can return back to work.</p>
                     <div class="temp">
                         <a href="https://github.com/shreya71/CodePen"><i class='bx bxl-github'></i></a>
@@ -172,18 +206,17 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="6.jpg"  height = "350" alt="">
+                <img src="6.jpg"  alt="">
                 <div class="portfolio-layer">
                     <h4>Load Management</h4>
                     <h3>C++</h3>
-                    <p>A microcontroller-based model for automatic load shedding that uses a relay mechanism. The battery's State of Charge (SOC) is
-                    sensed, and a signal is sent to an Arduino Uno, which operates the relay. The system ensures optimal battery usage and
+                    <p>A microcontroller-based model for automatic load shedding that uses a relay mechanism. The system ensures optimal battery usage and
                     prevents over-discharge.</p>
                     <a href="https://github.com/shreya71/Load-Management"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="3.jfif"  height = "350" alt="">
+                <img src="3.jfif"   alt="">
                 <div class="portfolio-layer">
                     <h4>Car reverse Sensor</h4>
                     <h3>C++</h3>
@@ -192,12 +225,11 @@
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="4.jpg" height = "350" alt="">
+                <img src="4.jpg"  alt="">
                 <div class="portfolio-layer">
                     <h4>Basic 1024 bit calculator</h4>
                     <h3>C++</h3>
-                    <p>A code that calculates addition, subtraction and multiplication operations for big numbers. Results for substraction are
-                    given with signs according the the inputs given. Implemented using sring manipulations. It also checks for overflow.</p>
+                    <p>A code that calculates addition, subtraction and multiplication operations for big numbers. It also checks for overflow.</p>
                     <a href="https://github.com/shreya71/1024_Bits_Calculator_-Basic-"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
